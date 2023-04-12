@@ -6,16 +6,16 @@
 
 <h2>Screenshot one: </h2><br>
 
-![Screenshot of homepage](https://imgur.com/DzPrEfe)
+![Screenshot of homepage](https://i.imgur.com/DzPrEfe.png)
 
 
 <h2>Screenshot two: </h2><br>
 
-![Screenshot of category](https://imgur.com/u7XuQuh)
+![Screenshot of category](https://i.imgur.com/u7XuQuh.png)
 
 <h2>Screenshot three: </h2><br>
 
-![Screenshot of product page](https://imgur.com/nw89uIy)
+![Screenshot of product page](https://i.imgur.com/nw89uIy.png)
 
 <h1>Project Description: </h1><br>
 This is an e-commerce store inspired by Amazon, Bol and Coolblue. It is built with React for the front-end and Firebase for the back-end. The Firebase is integrated with Stripe to enable payment processing.  The core concept is to provide an ecosystem for third parties to sell their products on the platform. 
