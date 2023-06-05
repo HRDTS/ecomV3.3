@@ -22,6 +22,18 @@ const stripe = require('stripe')('***REMOVED***');
 // The page reload is necessary because the new product requires a Route Path. This Route Path can only be generated when the page is reloaded.
 // If you look at Route.js, you will see that the Route Paths are dynamically rendered from the Database. 
 
+
+
+/*
+The code below can be used to expand the marketplace file.
+                    <option value='categoryBooks'>Books</option>
+                    {category === 'categoryElectronics' ? <option value='subcategoryPhones'>Phones</option> : null}
+                    {category === 'categoryElectronics' ? <option value='subcategoryGameConsole'>Game Consoles</option> : null}
+                    {category === 'categoryBooks' ? <option value='subcategoryScience'>Science</option> : null}
+                    {category === 'categoryBooks' ? <option value='subcategoryHistory'>History</option> : null}
+                    {category === 'categoryBooks' ? <option value='subcategoryBiography'>Biography</option> : null}
+*/
+
 function Marketplace (props) {
     const userInfo = user((state) => state.userInfo) // user authentication is stored here.
 
@@ -177,7 +189,6 @@ async function handleImage3(event) {
                 <select required name="category" onChange={(event) => setCategory(event.target.value)}>
                     <option value='' hidden>category</option>
                     <option value='categoryElectronics'>Electronics</option>
-                    <option value='categoryBooks'>Books</option>
                 </select>
                 </div>
 
@@ -187,11 +198,6 @@ async function handleImage3(event) {
                     <option value='' hidden>subcategory</option>
                     {category === undefined ? <option value='' disabled>choose a category first</option> : null}
                     {category === 'categoryElectronics' ? <option value='subcategoryTelevisions'>Televisions</option> : null}
-                    {category === 'categoryElectronics' ? <option value='subcategoryPhones'>Phones</option> : null}
-                    {category === 'categoryElectronics' ? <option value='subcategoryGameConsole'>Game Consoles</option> : null}
-                    {category === 'categoryBooks' ? <option value='subcategoryScience'>Science</option> : null}
-                    {category === 'categoryBooks' ? <option value='subcategoryHistory'>History</option> : null}
-                    {category === 'categoryBooks' ? <option value='subcategoryBiography'>Biography</option> : null}
                 </select>
                 </div>
 
